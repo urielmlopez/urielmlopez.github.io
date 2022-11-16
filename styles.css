@@ -8,6 +8,7 @@ html,
 body {
     margin: 0px;
     padding: 0;
+    font-size: 22px;
 }
 
 body {
@@ -15,31 +16,43 @@ body {
     display: flex;
 }
 
-p {
-    font-size: 20px;
-}
-
 main {
-    width: 75%;
-    max-width: 1500px;
     padding: 20px;
     border-radius: 20px;
     height: 95.5vh;
     display: flex;
     flex-direction: column;
+}
+
+.medium-width {
+    background-color: #BDCAB5;
+    width: 75%;
+    max-width: 1500px;
     justify-content: center;
 }
 
-#front-page-block {
-    background-color: #BDCAB5;
+.full-width {
+    background-color: #0094A3;
+    width: 90%;
+    max-width: 1800px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+}
+
+.medium-nav {
     width: 25%;
+    justify-content: space-around;
+}
+
+.small-nav {
+    width: 8%;
+    margin-top: 1rem;
 }
 
 nav ul {
@@ -56,6 +69,31 @@ nav ul li {
     font-weight: bold;
 }
 
+.info-block {
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#timeline-nav {
+    display: flex;
+    width: 20%;
+    height: 90vh;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+a h1 {
+    color: #ffffff;
+}
+
+.scroll {
+    width: 70%;
+    height: 90vh;
+    overflow-y: scroll;
+}
 
 #welcome {
     font-size: 2.5rem;
